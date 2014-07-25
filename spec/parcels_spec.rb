@@ -11,4 +11,9 @@ describe "Parcel" do
     test_parcel = Parcel.new(5,6,7,40)
     test_parcel.volume.should eq 210
   end
+
+  it "calculates the cost to ship the parcel" do
+    test_parcel = Parcel.new(5,6,7,40)
+    test_parcel.shipping_cost.should eq 84
+  end
 end
